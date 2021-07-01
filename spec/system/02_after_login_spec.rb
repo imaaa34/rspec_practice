@@ -149,6 +149,7 @@ RSpec.describe 'ログイン後のテスト' do
 
   describe 'ログアウト成功時' do
     it '画面遷移が正しい' do
+      click_link 'logout'
       visit root_path
     end
   end
